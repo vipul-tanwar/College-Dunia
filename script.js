@@ -1,57 +1,61 @@
 // console.log(collegesObject);
 const collegesDeck = document.getElementById("deck")
 let collegeTemplates = ``;
-for( var i = 0; i < collegesObj.colleges.length; i++){
+let loadCollage = 10;
+function loadCollages(){
+
+for( var i = 0; i < loadCollage; i++){
     let collegeInfo = collegesObj.colleges[i];
     // console.log(collegeInfo);
+    let { image } = collegeInfo
     collegeTemplates += `
     <div class="card">
                 <div class="ribbon">
-                    <p>PROMOTED</p>
+                    <p>PROMOTED ${i} </p>
                 </div>
 
                 <div class="card-image" style="position: relative;">   
-                    <img src="images/college_02.jpg"  alt="">
+                    <img src="images/${image}"  alt="">
                     <div class="img-filter" ></div>
 
                     <div class="img-details">
                         <div class="rating">
-                            <p><span>3.9</span>/5</p>
-                            <p>Very Good</p>
+                            <p><span>${collegeInfo.rating}</span>/5</p>
+                            <p>${collegeInfo.rating_remarks}</p>
                         </div>
                         <div class="college-ranking">
-                            <p>Best collge 2018</p>
+                            <p>${collegeInfo.tags[0]}</p>
                         </div>
                         <div class="dist">
-                            <p>2kms away</p>
+                            <p>${collegeInfo.tags[1]}</p>
                         </div>
-                        <p class="ranking">#7 in 260 colleges in north campus</p>
+                        <p class="ranking">${collegeInfo.ranking}</p>
                     </div>
 
                 </div>
                 <div class="card-details ">
                     <div class="college-fees-details" >
                         <div class="college-fees">
-                            <p style="display: inline-block;">₹68756</p>
+                            <p style="display: inline-block;">₹${collegeInfo.original_fees}</p>
 
                             <!-- <div class="shape" >
                                 <div class="tri"></div>
                                 <div class="rect"><p>20</p></div>
                                 <div class="circle"></div>
-                            </div> -->
+                            </div> --> 
                         </div>
                         
-                        <p class="disk-fees">₹5000</p>
-                        <p class="sem-fees">Per Semester (3 months)</p>
+                        <p class="disk-fees">₹${collegeInfo.discounted_fees}</p>
+                        <p class="sem-fees">${collegeInfo.fees_cycle}</p>
                     </div>
                     <div class="college-name">
-                        <h3 class="college-title">Hansraj College Delhi University</h3>
-                        <p class="college-route">Near Vishwavidyalya Metro Station <span class="router-len" >| 2 Kms away from bus stand</span></p>
-                        <p class="college-distance"> <span class="match">93% Match</span> : 2.5kms from GTB Nagar, 7 Kms from Rajiv Chowk</p>
+                        <h3 class="college-title">${collegeInfo.college_name}</h3>
+                        <p class="college-route">${collegeInfo.nearest_place[0]} <span class="router-len" >| ${collegeInfo.nearest_place[1]}</span></p>
+                        <p class="college-distance"> <span class="match">93% Match</span>: ${collegeInfo.famous_nearest_places}</p>
                     </div>
                     <div class="offers" >
-                            <p class="offer-flat">Flat <span class="spend">Rs2,000</span> off + upto Rs <span class="spend">500</span> wallet! to avail... <span class="login">LOGIN</span></p>
-                            <p class="offer-cancel" > Free Cancellation <span>.</span> Wi-Fi</p>
+                            <p class="offer-flat">${collegeInfo.offertext}</p>
+                            <p class="offer-cancel" >${collegeInfo.amenties[0]}<span>.</span>${collegeInfo.amenties[1]}</p>
                     </div>
                 </div>
             </div>
@@ -59,3 +63,13 @@ for( var i = 0; i < collegesObj.colleges.length; i++){
     ` 
 }
 collegesDeck.innerHTML = collegeTemplates
+loadCollage += 10
+}
+
+var intersectionObserver = new IntersectionObserver(function(entries) {
+    if (entries[0].intersectionRatio <= 0) return;
+    loadCollages();
+});
+
+intersectionObserver.observe(document.querySelector('#last-element'));
+
