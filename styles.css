@@ -107,11 +107,12 @@ body{
     margin: 0px;
     font-size: 13px;
     padding: 8px 10px;
+    
 }
 .college-ranking > p{
     margin: 0px;
     font-weight: 600;
-    color: grey;
+    color: #585858;
 }
 .dist{
     position: absolute;
@@ -128,11 +129,9 @@ body{
 .dist > p{
     margin: 0px;
     font-weight: 600;
-    color: grey;
+    color: #585858;
 }
 .ranking{
-    
-    
     position: absolute;
     font-size: 13px;
     font-weight: 400;
@@ -141,18 +140,38 @@ body{
     bottom: 10px;
     padding: 8px 10px;
     margin: 0px;
-
+    font-weight: 600;
 }
 
-.college-fees  {
-    margin-top: 10px;
+.college-fees-details  {
+    margin-top: 0px;
     float: right;
     margin-right: 25px;
     text-align: right;
 }
-.college-fees p{
+.college-fees-details p{
     margin: 0px 0px 0px 0px ;
+    font-weight: 600;
 }
+
+.college-fees > p{
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    color: #727272;
+}   
+.disk-fees{
+    color: #DD1C26;
+    font-weight: 800;
+    font-size: 32px;
+}
+.sem-fees{
+    font-size: 12px;
+    color: #919191;
+    font-weight: 600;
+}
+
 
 .college-name{
     margin-left: 15px;
@@ -160,19 +179,32 @@ body{
 }
 .college-title{
     margin: 15px 0px 0px 0px;
+    color: #565656;
 }
 .college-route{
     margin: 0px;
     font-size: 14px;
     padding-bottom: 5px;
     padding-top: 7px;
+    color: #565656;
+    font-weight: 600;
+}
+.router-len{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    color: #B2B2B2;
+
 }
 .college-distance{
     margin: 0px;
     font-size: 14px;
-    padding-top: 12px;
+    padding-top: 10px;
 }
-
+.match{
+    color: #52BBA1;
+    font-weight: 800;
+}
 
 .offers{
     /* position: absolute; */
@@ -185,26 +217,33 @@ body{
 } */
 .offer-flat{
     position: absolute;
-    background-color: green;
-    color: white;
+    background-color: #CCF5E7;
+    color: black;
+    font-weight: 600;
     padding: 8px 20px 10px 15px;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     font-size: 14px;
-    bottom: -6px;
+    bottom: -5px;
     margin-top: 0px;
     /* display:inline-block; */
+}
+.offer-flat > .spend {
+    color: #4FB9A0;
+}
+.login{
+    color: #2FA4D4;
 }
 
 .offer-cancel{
     margin-top: 0px;
     position: absolute;
     right: 25px;
-    bottom: -6px;
+    bottom: -5px;
     padding-bottom: 10px;
     font-size: 14px;
-    font-weight: 600;
-
+    font-weight: 800;
+    color: #59BDA5;
 }
 
 .offer-cancel > span{
@@ -232,3 +271,44 @@ body{
     margin: auto;
     display: inline-block;
   } */
+
+  .shape{
+    height: 60px;
+    position: relative;
+    float: right;
+    
+    }
+    .tri{
+    height: 0px;
+    width: 0px;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #DD1C26;
+    border-top: 7px solid transparent;
+    float: left;
+    
+    }
+    .rect{
+    height: 14px;
+    width: 22px;
+    background-color: #DD1C26;
+    float: left;
+    color: white;
+    
+    padding-right: 2px;
+    }
+    .rect > p {
+        font-size: 10px;
+        position: absolute;
+        left: 14px;
+    }
+    .circle{
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    bottom: 0px;
+    transform: translateY(-50%);
+    left: 6px;
+    }
