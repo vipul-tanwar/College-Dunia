@@ -1,0 +1,218 @@
+body{
+    background-color: black;
+    font-family: Lato;
+    font-weight: 500;
+}
+.container{
+    background-color: white;
+    margin-right:220px;
+    margin-left: 220px;
+    height: 100%;
+    
+    /* position: relative; */
+}
+.deck{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 640px;
+    /* height: ; */
+    background-color: white;
+    display: inline-block;
+    margin: 35px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid lightgrey;
+}
+.ribbon { 
+    height: 0px;
+    width: 150px;
+    border-top: 18px solid #68A7FF;
+    border-left: 18px solid transparent;
+    border-bottom: 18px solid #68A7FF;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    padding: 0px;
+    font-weight: 600;
+}
+.ribbon > p{
+    position: absolute;
+    top: -11px;
+    left: 26px;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+.card-image > img{
+    width: 100%;
+    height: 63%;
+    object-fit:cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.img-filter{
+    width: 100%; 
+    height: 100%; 
+    background-color: black; 
+    position: absolute; 
+    top: 0px; 
+    opacity: 0.7; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.img-details{
+    width: 100%; 
+    position: absolute; 
+    top: 0px;
+    height: 100%;
+}
+
+.rating{
+    background-color: #F5A626;
+    /* height: 60px; */
+    /* width: 80px; */
+    border-radius: 5px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+.rating > p{
+    margin: 0px;
+}
+
+.rating > p > span{
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.pill{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background-color: white;
+    /* height: 38px;
+    width: 80px; */
+    border-radius: 80px;
+    margin: 0px;
+    font-size: 13px;
+    padding: 8px 10px;
+}
+.pill > p{
+    margin: 0px;
+    font-weight: 600;
+    color: grey;
+}
+.pill-2{
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+    background-color: white;
+    /* height: 38px;
+    width: 80px; */
+    border-radius: 80px;
+    font-size: 13px;
+    padding: 8px 10px;
+}
+
+.pill-2 > p{
+    margin: 0px;
+    font-weight: 600;
+    color: grey;
+}
+.ranking{
+    
+    
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    padding: 8px 10px;
+    margin: 0px;
+
+}
+
+.card-details-1  {
+    margin-top: 15px;
+    float: right;
+    margin-right: 22px;
+    text-align: right;
+}
+.card-details-1 p{
+    margin: 0px 0px 0px 0px ;
+}
+
+.card-details-2{
+    margin-left: 15px;
+    /* float: left; */
+}
+.card-details-2 h3{
+    margin: 15px 0px 10px 0px;
+}
+.card-details-2 p{
+    margin: 0px;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+
+.offers{
+    /* position: absolute; */
+    left: 15px;
+    bottom: 10px;
+}
+.offers > div{
+    width: 100%;
+}
+.offer-flat{
+    position: absolute;
+    background-color: green;
+    color: white;
+    padding: 8px 20px 10px 15px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-size: 14px;
+    /* display:inline-block; */
+    bottom: 0px;
+}
+.temp{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    
+}
+
+
+/* .main {
+    width: 100%;
+    background-color: #c3c3c3;
+    position: relative;
+    text-align: center;
+  }
+  .child1 {
+    background-color: #666;
+    width: 600px;
+    margin: auto;
+    display: inline-block;
+  }
+  .child2 {
+    background-color: #888;
+    width: 600px;
+    margin: auto;
+    display: inline-block;
+  } */
