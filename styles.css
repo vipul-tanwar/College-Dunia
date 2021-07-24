@@ -7,20 +7,19 @@ body{
     background-color: white;
     margin-right:220px;
     margin-left: 220px;
-    height: 100%;
+    
     
     /* position: relative; */
 }
 .deck{
-    width: 100%;
+    
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 .card{
     width: 640px;
-    /* height: ; */
+    height:390px ;
     background-color: white;
-    display: inline-block;
     margin: 35px;
     border-radius: 5px;
     position: relative;
@@ -97,7 +96,7 @@ body{
     
 }
 
-.pill{
+.college-ranking{
     position: absolute;
     bottom: 10px;
     left: 15px;
@@ -109,12 +108,12 @@ body{
     font-size: 13px;
     padding: 8px 10px;
 }
-.pill > p{
+.college-ranking > p{
     margin: 0px;
     font-weight: 600;
     color: grey;
 }
-.pill-2{
+.dist{
     position: absolute;
     bottom: 10px;
     left: 140px;
@@ -126,7 +125,7 @@ body{
     padding: 8px 10px;
 }
 
-.pill-2 > p{
+.dist > p{
     margin: 0px;
     font-weight: 600;
     color: grey;
@@ -145,27 +144,32 @@ body{
 
 }
 
-.card-details-1  {
-    margin-top: 15px;
+.college-fees  {
+    margin-top: 10px;
     float: right;
-    margin-right: 22px;
+    margin-right: 25px;
     text-align: right;
 }
-.card-details-1 p{
+.college-fees p{
     margin: 0px 0px 0px 0px ;
 }
 
-.card-details-2{
+.college-name{
     margin-left: 15px;
     /* float: left; */
 }
-.card-details-2 h3{
-    margin: 15px 0px 10px 0px;
+.college-title{
+    margin: 15px 0px 0px 0px;
 }
-.card-details-2 p{
+.college-route{
     margin: 0px;
     font-size: 14px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+}
+.college-distance{
+    margin: 0px;
+    font-size: 14px;
+    padding-top: 12px;
 }
 
 
@@ -173,10 +177,11 @@ body{
     /* position: absolute; */
     left: 15px;
     bottom: 10px;
+    margin-top: 0px;
 }
-.offers > div{
+/* .offers > div{
     width: 100%;
-}
+} */
 .offer-flat{
     position: absolute;
     background-color: green;
@@ -185,18 +190,30 @@ body{
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     font-size: 14px;
+    bottom: -6px;
+    margin-top: 0px;
+
+    
     /* display:inline-block; */
-    bottom: 0px;
-}
-.temp{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    padding-bottom: 10px;
-    margin-right: 20px;
     
 }
-
+.offer-cancel{
+    margin-top: 0px;
+    position: absolute;
+    right: 25px;
+    bottom: -6px;
+    padding-bottom: 10px;
+    /* margin-right: 20px; */
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.offer-cancel > span{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: 0px;
+}
 
 /* .main {
     width: 100%;
@@ -216,3 +233,6 @@ body{
     margin: auto;
     display: inline-block;
   } */
+  div{
+      transform: translateY(50%);
+  }

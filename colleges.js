@@ -1,4 +1,4 @@
-const colleges = {
+const collegesObj = {
     "colleges": [
         {
             "college_name": "Hansraj College Delhi University - 1",
