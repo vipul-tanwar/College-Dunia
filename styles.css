@@ -160,7 +160,54 @@ body{
     font-weight: 600;
     padding-bottom: 0px;
     color: #727272;
+    float: none;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 2px;
 }   
+
+.disc-tag{
+    height: 15px;
+    position: relative;
+    float: right;
+    margin: 0px;
+}
+.tri{
+    height: 0px;
+    width: 0px;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #DD1C26;
+    border-top: 7px solid transparent;
+    float: left;
+}
+.rect{
+    height: 14px;
+    width: 22px;
+    background-color: #DD1C26;
+    float: left;
+    color: white;
+    
+    padding-right: 2px;
+}
+.rect > p {
+        font-size: 10px;
+        position: absolute;
+        left: 14px;
+}
+
+.circle{
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    bottom: 0px;
+    transform: translateY(-50%);
+    left: 6px;
+}
+
+
 .disk-fees{
     color: #DD1C26;
     font-weight: 800;
@@ -235,7 +282,7 @@ body{
     color: #2FA4D4;
 }
 
-.offer-cancel{
+/* .offer-cancel{
     margin-top: 0px;
     position: absolute;
     right: 25px;
@@ -245,13 +292,33 @@ body{
     font-weight: 800;
     color: #59BDA5;
 }
-
-.offer-cancel > span{
+.offer-cancel > .dot{
     font-size: 20px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
     height: 0px;
 }
+.offer-name {
+    margin-top: 10px;
+} */
+
+.offer-cancel{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #59BDA5;
+}
+.dot {
+        height: 4px;
+        width: 4px;
+        display: inline-block;
+        background-color: #59BDA5;
+        border-radius: 100%;
+        margin: 0px 4px 2px;
+}
+
 
 /* .main {
     width: 100%;
@@ -272,43 +339,4 @@ body{
     display: inline-block;
   } */
 
-  .shape{
-    height: 60px;
-    position: relative;
-    float: right;
-    
-    }
-    .tri{
-    height: 0px;
-    width: 0px;
-    border-bottom: 7px solid transparent;
-    border-right: 7px solid #DD1C26;
-    border-top: 7px solid transparent;
-    float: left;
-    
-    }
-    .rect{
-    height: 14px;
-    width: 22px;
-    background-color: #DD1C26;
-    float: left;
-    color: white;
-    
-    padding-right: 2px;
-    }
-    .rect > p {
-        font-size: 10px;
-        position: absolute;
-        left: 14px;
-    }
-    .circle{
-    height: 4px;
-    width: 4px;
-    border-radius: 100%;
-    background-color: white;
-    position: absolute;
-    top: 7px;
-    bottom: 0px;
-    transform: translateY(-50%);
-    left: 6px;
-    }
+  

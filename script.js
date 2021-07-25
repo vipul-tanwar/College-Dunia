@@ -36,13 +36,15 @@ for( var i = 0; i < loadCollage; i++){
                 <div class="card-details ">
                     <div class="college-fees-details" >
                         <div class="college-fees">
-                            <p style="display: inline-block;">₹${collegeInfo.original_fees}</p>
+                        
+                            <p>₹${collegeInfo.original_fees}</p>
 
-                            <!-- <div class="shape" >
+                            <div class="disc-tag" >
                                 <div class="tri"></div>
                                 <div class="rect"><p>20</p></div>
                                 <div class="circle"></div>
-                            </div> --> 
+                            </div>
+
                         </div>
                         
                         <p class="disk-fees">₹${collegeInfo.discounted_fees}</p>
@@ -55,7 +57,7 @@ for( var i = 0; i < loadCollage; i++){
                     </div>
                     <div class="offers" >
                             <p class="offer-flat">${collegeInfo.offertext}</p>
-                            <p class="offer-cancel" >${collegeInfo.amenties[0]}<span>.</span>${collegeInfo.amenties[1]}</p>
+                            <div class="offer-cancel" ><p><span>${collegeInfo.amenties[0]}</span><span class="dot"></span><span>${collegeInfo.amenties[1]}</span></p></div>
                     </div>
                 </div>
             </div>
