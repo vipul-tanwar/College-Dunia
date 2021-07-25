@@ -8,7 +8,7 @@ span > svg{
     height: 12px;
     margin-bottom: 1px;
 }
-.first-span{
+.star-span{
     margin-left: 5px;
 }
 .container{
@@ -16,9 +16,6 @@ span > svg{
     margin-right:220px;
     margin-left: 220px;
     padding-top: 20px;
-    /* height: 100%; */
-    
-    /* position: relative; */
 }
 .colleges-location{
     margin-left: 58px;
@@ -32,7 +29,6 @@ span > svg{
 }
 .card{
     width: 640px;
-    /* height: 390px; */
     background-color: white;
     display: inline-block;
     margin: 30px;
@@ -63,7 +59,9 @@ span > svg{
     padding: 0px 0px 0px 0px;
     padding: 0px;
 }
-
+.card-image{
+    position: relative;
+}
 .card-image > img{
     width: 100%;
     height: 63%;
@@ -90,8 +88,6 @@ span > svg{
 
 .rating{
     background-color: #F5A626;
-    /* height: 60px; */
-    /* width: 80px; */
     border-radius: 5px;
     float: right;
     margin-top: 30px;
@@ -116,8 +112,6 @@ span > svg{
     bottom: 10px;
     left: 15px;
     background-color: white;
-    /* height: 38px;
-    width: 80px; */
     border-radius: 80px;
     margin: 0px;
     font-size: 13px;
@@ -134,8 +128,6 @@ span > svg{
     bottom: 10px;
     left: 165px;
     background-color: white;
-    /* height: 38px;
-    width: 80px; */
     border-radius: 80px;
     font-size: 13px;
     padding: 8px 10px;
@@ -205,9 +197,9 @@ span > svg{
     padding-right: 2px;
 }
 .rect > p {
-        font-size: 10px;
-        position: absolute;
-        left: 14px;
+    font-size: 10px;
+    position: absolute;
+    left: 14px;
 }
 
 .circle{
@@ -237,7 +229,6 @@ span > svg{
 
 .college-name{
     margin-left: 15px;
-    /* float: left; */
 }
 .college-title{
     margin: 15px 0px 0px 0px;
@@ -269,14 +260,11 @@ span > svg{
 }
 
 .offers{
-    /* position: absolute; */
     left: 15px;
     bottom: 10px;
     margin-top: 0px;
 }
-/* .offers > div{
-    width: 100%;
-} */
+
 .offer-flat{
     position: absolute;
     background-color: #CCF5E7;
@@ -288,7 +276,6 @@ span > svg{
     font-size: 14px;
     bottom: -5px;
     margin-top: 0px;
-    /* display:inline-block; */
 }
 .offer-flat > .spend {
     color: #4FB9A0;
@@ -296,26 +283,6 @@ span > svg{
 .login{
     color: #2FA4D4;
 }
-
-/* .offer-cancel{
-    margin-top: 0px;
-    position: absolute;
-    right: 25px;
-    bottom: -5px;
-    padding-bottom: 10px;
-    font-size: 14px;
-    font-weight: 800;
-    color: #59BDA5;
-}
-.offer-cancel > .dot{
-    font-size: 20px;
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 10px 0px;
-    height: 0px;
-}
-.offer-name {
-    margin-top: 10px;
-} */
 
 .offer-cancel{
     position: absolute;
@@ -326,32 +293,10 @@ span > svg{
     color: #59BDA5;
 }
 .dot {
-        height: 4px;
-        width: 4px;
-        display: inline-block;
-        background-color: #59BDA5;
-        border-radius: 100%;
-        margin: 0px 4px 2px;
+    height: 4px;
+    width: 4px;
+    display: inline-block;
+    background-color: #59BDA5;
+    border-radius: 100%;
+    margin: 0px 4px 2px;
 }
-
-
-/* .main {
-    width: 100%;
-    background-color: #c3c3c3;
-    position: relative;
-    text-align: center;
-  }
-  .child1 {
-    background-color: #666;
-    width: 600px;
-    margin: auto;
-    display: inline-block;
-  }
-  .child2 {
-    background-color: #888;
-    width: 600px;
-    margin: auto;
-    display: inline-block;
-  } */
-
-  
